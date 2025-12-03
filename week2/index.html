@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+      <div id="scroll-progress"></div>
+    </div>
+
+    <!-- Hero Section with Video Background -->
+    <header id="hero">
+      <video autoplay loop muted id="video-background">
+        <!-- YOUR video link -->
+        <source
+          src="https://www.pexels.com/download/video/1730393/"
+          type="video/mp4"
+        />
+      </video>
+
+      <nav class="navbar">
+        <span class="logo">My Portfolio</span>
+
+        <button
+          class="menu-toggle"
+          id="menu-button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Prashant Sigdel</h1>
+        <!-- YOUR image link -->
+        <img
+          src="https://image2url.com/images/1764772293611-3c583f4e-f005-4d19-8b9c-8f870b5c52f4.jpg"
+          alt="Your Photo"
+          class="hero-photo"
+        />
+      </div>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a frontend developer who loves building clean, responsive, and
+          user-friendly interfaces. I enjoy turning ideas into real products
+          using HTML, CSS, and JavaScript.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill-pill">HTML5</div>
+          <div class="skill-pill">CSS3</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">Responsive Design</div>
+          <div class="skill-pill">Git &amp; GitHub</div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>A responsive landing page built using Flexbox &amp; Grid.</p>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>A JavaScript mini-app using DOM manipulation.</p>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>A clean UI portfolio layout using CSS Grid.</p>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Send me a message using the form below.</p>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div id="form-message"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
